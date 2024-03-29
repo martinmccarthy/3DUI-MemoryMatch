@@ -13,7 +13,6 @@ public class GodMovement : MonoBehaviour
     Vector3 currentRightHandPosition, currentLeftHandPosition, lastRightHandPosition, lastLeftHandPosition;
     float currentHandsDistance, lastHandsDistance;
     Vector3 handMovement;
-    bool actionStarted = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +38,6 @@ public class GodMovement : MonoBehaviour
             TranslateEnvironment();
         } else {
             handMovement = Vector3.zero;
-            actionStarted = false;
         }
         lastRightHandPosition = currentRightHandPosition;
         lastLeftHandPosition = currentLeftHandPosition;
